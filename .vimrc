@@ -1,16 +1,15 @@
-" ~/.vimrc
+"  ~/.vimrc
 " Installed -
-" 	1. vim-pathogen (plugin manager)
-" 	2. vim-sensible
-" 	3. vim-airline
-" 	4. vim-airline-themes
-" 	5. vim-colors-solarized
+"     1. vim-pathogen (plugin manager)
+"     2. vim-sensible
+"     3. vim-airline
+"     4. vim-airline-themes
+"     5. vim-colors-solarized
+"     6. ctab.vim (~/.vim/macro/)
+
+source /etc/vimrc
 
 execute pathogen#infect()
-
-if !exists("g:syntax_on")
-	syntax enable
-endif
 
 filetype plugin indent on
 " Set line numbers
@@ -18,12 +17,13 @@ set number
 
 " Auto-indent filetypes before writing file (=% at opening brace in normal
 " mode to indent block)
-autocmd BufWritePre *.c,*.py,*.sh,*.pl,*.pm :normal gg=G
+" autocmd BufWritePre *.c,*.py,*.sh :normal gg=G
 
 " Compatibilty while checking into GitHub and/or sharing with other users
 set fileformat=unix
 
 set background=dark
+
 " Check colorschemes with :colorscheme <TAB>
 colorscheme slate
 
