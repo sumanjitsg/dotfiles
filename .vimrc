@@ -7,11 +7,12 @@
 "     5. vim-colors-solarized
 "     6. ctab.vim (~/.vim/macro/)
 
-source /etc/vimrc
+source /etc/vim/vimrc
 
 execute pathogen#infect()
 
 filetype plugin indent on
+
 " Set line numbers
 set number
 
